@@ -1,0 +1,67 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+html,
+body {
+  font-family: sans-serif;
+}
+:root {
+	--color_acc: white;
+	--anim_add_show: -90deg;
+}
+.main_back {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(30, 255, 44, 1) 51%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  height: 900px;
+}
+.quest_main {
+  padding-top: 40px;
+}
+.main_acc {
+  position: relative;
+  margin-left: 480px;
+  padding: 16px 39px;
+  margin-bottom: 50px;
+}
+.main_flex {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.line_hor > hr {
+  position: absolute;
+  width: 75%;
+  top: 55px;
+  outline: none;
+  border: 2px solid green;
+  border-radius: 25px;
+}
+.ln_svg {
+  position: absolute;
+  left: 83%;
+  cursor: pointer;
+  fill: white;
+  transition: 0.5s ease;
+}
+.ln_svg:hover {
+	transform: rotate(calc(var(--anim_add_show) - 40deg));
+	fill: black;
+	transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+span {
+	color: var(--color_acc);
+	text-transform: uppercase;
+	cursor: default;
+}
+/* .contains_acc {
+  background-color: white;
+  width: 50%;
+  height: 200px;
+  position: absolute;
+} */
